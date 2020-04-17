@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex:1
-
     },
     headerText: {
         fontWeight: 'bold',

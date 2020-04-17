@@ -8,7 +8,12 @@ const Stack = createStackNavigator();
 
 function AboutStack({navigation}) {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#7aaeff',
+                },
+            }}>
             <Stack.Screen
                 name='Cart'
                 component={About}
@@ -17,15 +22,13 @@ function AboutStack({navigation}) {
                     headerStyle: {
                         backgroundColor: '#7aaeff',
                     },
-                }}/>
+                }}
+            />
             <Stack.Screen
                 name='MoreAbout'
                 component={MoreAbout}
                 options={{
                     title: 'More',
-                    headerStyle: {
-                        backgroundColor: '#7aaeff',
-                    },
                 }}/>
         </Stack.Navigator>
     );
